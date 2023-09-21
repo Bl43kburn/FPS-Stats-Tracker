@@ -1,0 +1,20 @@
+.game_card__image
+{
+    display: flex;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: black;
+    max-width: 300px;
+    max-height: 600px;
+    margin: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+}
+
+.game_card__image:hover
+{
+    box-shadow: 0px 0px 10px 10px rgb(139 0 139 / 0.5);
+    filter: brightness(100%);
+}

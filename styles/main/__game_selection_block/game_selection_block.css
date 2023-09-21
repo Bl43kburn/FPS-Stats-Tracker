@@ -1,0 +1,6 @@
+.game_selection_block
+{
+    display: flex;
+    font-size: 0;
+    width: 100%;
+}

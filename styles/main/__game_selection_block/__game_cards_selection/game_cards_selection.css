@@ -1,0 +1,24 @@
+@media screen and (max-height: 600px)
+{
+    div .game_cards_selection{
+        flex-wrap: nowrap;
+    }
+}
+
+.game_cards_selection{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    list-style-type: none;
+    align-items: center;
+    scrollbar-width: none;
+    margin: 30px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.game_cards_selection::-webkit-scrollbar
+{
+    width: 0;
+    height: 0;
+}

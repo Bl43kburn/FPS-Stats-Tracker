@@ -1,0 +1,9 @@
+.navigation__element
+{
+    text-decoration: none;
+}
+
+.navigation__element:visited
+{
+    color: black;
+}

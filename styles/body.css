@@ -1,0 +1,8 @@
+.body{
+    display: block;
+    background-image: url('../imgs/topography.jpg');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 10px 10px 10px rgba(245, 245, 245, 0);
+}

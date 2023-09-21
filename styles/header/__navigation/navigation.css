@@ -1,0 +1,8 @@
+.navigation
+{
+    display: flex;
+    width: 85%;
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 25px;
+}
