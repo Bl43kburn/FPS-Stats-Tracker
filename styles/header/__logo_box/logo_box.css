@@ -1,0 +1,8 @@
+.logo_box
+{
+    display: flex;
+    box-sizing: border-box;
+    margin: auto;
+    width: 15%;
+    height: 100%;
+}

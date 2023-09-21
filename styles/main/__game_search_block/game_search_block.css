@@ -1,0 +1,8 @@
+.game_search_block{
+    display: flex;
+    padding-top: 10px;
+    height: 80px;
+    font-size: 0;
+    flex-grow: 2;
+}
+
