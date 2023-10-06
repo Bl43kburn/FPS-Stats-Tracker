@@ -1,6 +1,5 @@
 .searchbar_block__searchbar {
-    display: flex;
-    width: 60%;
+    width: 40%;
     height: 40%;
     border-radius: 4px;
     border-style: solid;

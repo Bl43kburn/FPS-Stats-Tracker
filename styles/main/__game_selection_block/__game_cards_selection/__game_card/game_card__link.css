@@ -1,0 +1,5 @@
+.game_card__link
+{
+    display: flex;
+    z-index: 10;
+}

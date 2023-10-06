@@ -10,9 +10,10 @@
     overflow-x: scroll;
     overflow-y: hidden;
     list-style-type: none;
-    align-items: center;
+    align-items: stretch;
     scrollbar-width: none;
     margin: 30px;
+    box-sizing: border-box;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
