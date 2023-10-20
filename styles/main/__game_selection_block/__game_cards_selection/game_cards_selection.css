@@ -2,6 +2,7 @@
 {
     div .game_cards_selection{
         flex-wrap: nowrap;
+        justify-content: start;
     }
 }
 
@@ -12,9 +13,8 @@
     list-style-type: none;
     align-items: stretch;
     scrollbar-width: none;
-    margin: 30px;
     box-sizing: border-box;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 

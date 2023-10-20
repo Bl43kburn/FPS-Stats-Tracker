@@ -4,9 +4,8 @@
     border-radius: 3px;
     border-style: solid;
     border-color: black;
-    max-width: 200px;
-    max-height: 500px;
-    margin: 20px;
+    max-width: 300px;
+    max-height: 450px;
     box-sizing: border-box;
     height: 100%;
     object-fit: cover;
