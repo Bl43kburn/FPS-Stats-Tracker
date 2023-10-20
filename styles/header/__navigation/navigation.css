@@ -5,4 +5,13 @@
     box-sizing: border-box;
     height: 100%;
     font-size: 25px;
+    position: sticky;
+    bottom: 0;
+}
+
+@media screen and (max-width: 600px)
+{
+    nav.navigation{
+        width: 100%;
+    }
 }

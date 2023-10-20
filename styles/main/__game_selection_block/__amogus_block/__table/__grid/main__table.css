@@ -1,0 +1,33 @@
+.main__table
+{
+    margin-top: 20px;
+    display: grid;
+    grid-auto-rows: minmax(0, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    grid-gap: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(220, 220, 220, 0.6), rgba(220, 220, 220, 0));
+    border-radius: 3px;
+    border-style: solid;
+}
+
+@media screen and (min-width: 1500px) {
+    div .main__table {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    div .main__table :nth-child(6n + 4){
+        background-color: aqua;
+    }
+
+    div .main__table :nth-child(6n + 5){
+        background-color: aqua;
+    }
+
+    div .main__table :nth-child(6n + 6){
+        background-color: aqua;
+    }
+
+}
