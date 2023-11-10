@@ -1,7 +1,6 @@
 .game_card
 {
     display: flex;
-    margin: 10px;
     height: 100%;
     min-height: 100%;
     align-items: center;

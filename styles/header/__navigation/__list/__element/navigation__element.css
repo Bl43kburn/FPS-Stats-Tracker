@@ -7,3 +7,9 @@
 {
     color: black;
 }
+
+.navigation__element:hover{
+    border-style: solid;
+    border-radius: 2px;
+    border-color: black;
+}

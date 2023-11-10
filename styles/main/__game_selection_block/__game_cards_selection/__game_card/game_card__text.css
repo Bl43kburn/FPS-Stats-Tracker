@@ -1,6 +1,5 @@
 .game_card__text
 {
-    display: flex;
     overflow-wrap: break-word;
     position: absolute;
     margin: 20px;

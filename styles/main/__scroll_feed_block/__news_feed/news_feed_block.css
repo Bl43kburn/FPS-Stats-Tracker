@@ -1,0 +1,12 @@
+.news_feed__block
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: center;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+
+}

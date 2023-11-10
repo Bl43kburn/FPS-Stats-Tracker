@@ -1,0 +1,15 @@
+.news_feed__element
+{
+    display: flex;
+    justify-content: center;
+    border-color: whitesmoke;
+    border-style: solid;
+    border-width: 1px;
+    text-decoration: none;
+}
+
+
+.news_feed__element:visited
+{
+    color: black;
+}
