@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <title>Statistics tracker</title>
     <meta name="description"
-          content="Track your performance in a multitude of games. Analyze your style. Improve your game.">
+          content="Track your performance in a multitude of games. Analyze your style. Improve your performance.">
     <meta name="keywords" content="Warzone, Apex Legends, CS, Fortnite">
 
-    <!-- <link href="styles/outline-prototype-label.css" rel="stylesheet"> -->
+   <!-- <link href="styles/outline-prototype-label.css" rel="stylesheet"> -->
     <link href="./styles/body.css" rel="stylesheet">
     <link href="./styles/main/main.css" rel="stylesheet">
     <link href="./styles/html.css" rel="stylesheet">
@@ -16,9 +16,15 @@
     <link href="./styles/header/__logo_box/logo_box.css" rel="stylesheet">
     <link href="./styles/header/__logo_box/__image/logo_box__image.css">
     <link href="./styles/header/__navigation/__list/__element/navigation__element.css" rel="stylesheet">
+    <link href="./styles/header/__navigation/__list/__element/navigation__element__active.css" rel="stylesheet">
+
     <link href="./styles/header/__logo_box/__text/logo_box__text.css" rel="stylesheet">
     <link href="./styles/header/__navigation/navigation.css" rel="stylesheet">
     <link href="./styles/header/__navigation/__list/navigation__list.css" rel="stylesheet">
+
+
+
+
     <link href="./styles/main/__game_search_block/game_search_block.css" rel="stylesheet">
     <link href="./styles/main/__game_search_block/__genre_block/genre_block.css" rel="stylesheet">
     <link href="./styles/main/__game_search_block/__genre_block/__drop_down/genre_block__dropdown.css" rel="stylesheet">
@@ -52,6 +58,13 @@
 
     <link href="./styles/footer/footer.css" rel="stylesheet">
     <link href="./styles/footer/__quotes/footer__quotes.css" rel="stylesheet">
+    <link href="./styles/footer/__loadTime/footer__loadTime.css" rel="stylesheet">
+    <link href="./styles/footer/__quotes/quote_block.css" rel="stylesheet">
+
+
+
+    <script src="scripts/loadtime.js"></script>
+    <script src="scripts/setActiveNav.js"></script>
 
 
 </head>
@@ -59,15 +72,15 @@
 <body class="body">
 <header class="header">
     <div class="logo_box">
-        <img src="imgs/tf141.png" class="logo_box__image" alt="Task Force 141 emblem">
+        <img src="imgs/tf141.png" class="logo_box__image" alt="Task Force 141 insignia">
         <h2 class="logo_box__text">
             Stats tracker
         </h2>
     </div>
     <nav class="navigation">
         <ul class="navigation__list">
-            <li><a class="navigation__element" href="https://google.com">Meta loadouts</a></li>
-            <li><a class="navigation__element" href="https://google.com">Buy a subscription</a></li>
+            <li><a class="navigation__element" href="index.html">Home</a></li>
+            <li><a class="navigation__element" href="news.html">News</a></li>
         </ul>
     </nav>
 </header>
@@ -118,87 +131,53 @@
             </pre>
             </div>
             <img class="amogus__makarevich_image" src="imgs/amogus_roma.png" alt="Roma said the amogus word!">
-            <div class = "main__table">
-                <div class = "table__header table__element">
-                    Column 1
-                </div>
-                <div class = "table__header table__element">
-                    Column 2
-                </div>
-                <div class = "table__header table__element">
-                    Column 3
-                </div>
-                <div class = "table__element">
-                    Content 1
-                </div>
-                <div class = "table__element">
-                    Content 2
-                </div>
-                <div class = "table__element">
-                    Content 3
-                </div>
-                <div class = "table__element">
-                    Content 4
-                </div>
-                <div class = "table__element">
-                    Content 5
-                </div>
-                <div class = "table__element">
-                    Content 6
-                </div>
-                <div class = "table__element">
-                    Content 7
-                </div>
-                <div class = "table__element">
-                    Content 8
-                </div>
-                <div class = "table__element">
-                    Content 9
-                </div>
-            </div>
-
         </div>
         <ul class="game_cards_selection">
             <div class="game_card__background">
                 <li class="game_card">
-                    <a href="https://google.com" class="game_card__link"><img class="game_card__image" src="imgs/huntShowdown.jpg"
-                                                       alt="Hunt:Showdown picture"> </a>
+                    <a href="https://google.com" class="game_card__link"><img class="game_card__image"
+                                                                              src="imgs/huntShowdown.jpg"
+                                                                              alt="Hunt:Showdown picture"> </a>
                     <span class="game_card__text"> Hunt: Showdown </span>
                 </li>
             </div>
             <div class="game_card__background">
                 <li class="game_card">
-                    <a href="https://google.com" class="game_card__link"> <img class="game_card__image" src="imgs/fortnite.png"
-                                                       alt="Fortnite picture"></a>
+                    <a href="https://google.com" class="game_card__link"> <img class="game_card__image"
+                                                                               src="imgs/fortnite.png"
+                                                                               alt="Fortnite picture"></a>
                     <span class="game_card__text"> Fortnite </span>
                 </li>
             </div>
             <div class="game_card__background">
                 <li class="game_card">
-                    <a href="https://google.com" class="game_card__link"> <img class="game_card__image" src="imgs/warzone.jpg"
-                                                       alt="Warzone 2 picture"></a>
+                    <a href="https://google.com" class="game_card__link"> <img class="game_card__image"
+                                                                               src="imgs/warzone.jpg"
+                                                                               alt="Warzone 2 picture"></a>
                     <span class="game_card__text"> Warzone </span>
                 </li>
             </div>
             <div class="game_card__background">
                 <li class="game_card">
                     <a href="https://google.com" class="game_card__link"> <img class="game_card__image"
-                                                       src="imgs/assetto_corsa_competizione.png"
-                                                       alt="Assetto Corsa Competizione picture"></a>
+                                                                               src="imgs/assetto_corsa_competizione.png"
+                                                                               alt="Assetto Corsa Competizione picture"></a>
                     <span class="game_card__text"> Assetto Corsa Competizione </span>
                 </li>
             </div>
             <div class="game_card__background">
                 <li class="game_card">
-                    <a href="https://google.com" class="game_card__link"> <img class="game_card__image" src="imgs/mw2.jpg"
-                                                       alt="Modern Warfare 2 (2022) picture"></a>
+                    <a href="https://google.com" class="game_card__link"> <img class="game_card__image"
+                                                                               src="imgs/mw2.jpg"
+                                                                               alt="Modern Warfare 2 (2022) picture"></a>
                     <span class="game_card__text"> Call of Duty: Modern Warfare (2022) </span>
                 </li>
             </div>
             <div class="game_card__background">
                 <li class="game_card">
-                    <a href="https://google.com" class="game_card__link"> <img class="game_card__image" src="imgs/breakpoint.png"
-                                                       alt="Ghost Recon: Breakpoint"></a>
+                    <a href="https://google.com" class="game_card__link"> <img class="game_card__image"
+                                                                               src="imgs/breakpoint.png"
+                                                                               alt="Ghost Recon: Breakpoint"></a>
                     <span class="game_card__text"> Ghost Recon: Breakpoint </span>
                 </li>
             </div>
@@ -207,20 +186,23 @@
 </main>
 
 <footer class="footer">
-    <p class="footer__quotes">
-        <q cite="https://youtu.be/cMDbsL27g_E?si=4Noev5Vc4PFZSaSO">Взял нож - режь, взял дошик - ешь.</q>
-        (c) Джейсон Стэтхэм.
-    </p>
+    <div class="quote_block">
+        <p class="footer__quotes">
+            <q cite="https://youtu.be/cMDbsL27g_E?si=4Noev5Vc4PFZSaSO">Взял нож - режь, взял дошик - ешь.</q>
+            (c) Джейсон Стэтхэм.
+        </p>
 
-    <p class="footer__quotes">
-        <q cite="https://youtu.be/cMDbsL27g_E?si=4Noev5Vc4PFZSaSO">Знаешь Соединённые Штаты Америки? Я соединил.</q>
-        (c) Джейсон Стэтхэм.
-    </p>
+        <p class="footer__quotes">
+            <q cite="https://youtu.be/cMDbsL27g_E?si=4Noev5Vc4PFZSaSO">Знаешь Соединённые Штаты Америки? Я соединил.</q>
+            (c) Джейсон Стэтхэм.
+        </p>
 
-    <p class="footer__quotes">
-        <q cite="https://youtu.be/cMDbsL27g_E?si=4Noev5Vc4PFZSaSO">Если сделать греческий салат 31 декабря, то завтра он уже будет древнегреческим.</q>
-        (c) Джейсон Стэтхэм.
-    </p>
+        <p class="footer__quotes">
+            <q cite="https://youtu.be/cMDbsL27g_E?si=4Noev5Vc4PFZSaSO">Если сделать греческий салат 31 декабря, то
+                завтра он уже будет древнегреческим.</q>
+            (c) Джейсон Стэтхэм.
+        </p>
+    </div>
 </footer>
 </body>
 

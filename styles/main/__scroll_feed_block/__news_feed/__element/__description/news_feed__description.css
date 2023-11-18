@@ -1,0 +1,10 @@
+.news_feed__description
+{
+    word-break: break-word;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    font-size: 25px;
+    margin: 5px;
+    text-align: center;
+}

@@ -1,0 +1,9 @@
+.news_feed__picture
+{
+    width: 50%;
+
+    max-width: 1500px;
+    max-height: 750px;
+
+    object-fit: contain;
+}

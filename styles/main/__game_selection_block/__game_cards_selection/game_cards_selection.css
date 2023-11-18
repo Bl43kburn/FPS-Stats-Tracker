@@ -11,11 +11,13 @@
     overflow-x: scroll;
     overflow-y: hidden;
     list-style-type: none;
-    align-items: stretch;
     scrollbar-width: none;
     box-sizing: border-box;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    gap: 10px;
 }
 
 .game_cards_selection::-webkit-scrollbar
