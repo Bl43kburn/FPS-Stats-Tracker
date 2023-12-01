@@ -1,5 +1,9 @@
 .news_feed__title
 {
+    font-size: 2em;
     margin-left: 10%;
     margin-right: 10%;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
 }

@@ -2,9 +2,11 @@
 {
     word-break: break-word;
     box-sizing: border-box;
+    text-overflow: ellipsis;
+    font-size: 2em;
     overflow: hidden;
-
-    font-size: 25px;
     margin: 5px;
     text-align: center;
+    display: flex;
+    align-items: start;
 }
