@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Statistics tracker</title>
@@ -34,7 +34,37 @@
     <link href="styles/main/__scroll_feed_block/__news_feed/__element/news_feed_text_block.css"
           rel="stylesheet">
 
+    <link href="styles/main/__submit_news_block/submit_news_block.css" rel="stylesheet">
+    <link href="styles/main/__submit_news_block/__submit_button_block/submit_news_button_block.css" rel="stylesheet">
+    <link href="styles/main/__submit_news_block/__submit_button_block/_submit_news_button/submit_news_button.css"
+          rel="stylesheet">
+    <link href="styles/main/__background_blur_block/background_blur_block.css"
+          rel="stylesheet">
 
+    <link href="styles/main/__background_blur_block/background_blur_block.css"
+          rel="stylesheet">
+    <link href="styles/main/__background_blur_block/background_blur_block.css"
+          rel="stylesheet">
+    <link href="styles/main/__background_blur_block/background_blur_block.css"
+          rel="stylesheet">
+    <link href="styles/main/__submit_news_block/__submit_news_form_block/submit_news_form_block.css"
+          rel="stylesheet">
+    <link href="styles/main/__submit_news_block/__submit_news_form_block/__submit_news_form_body/submit_news_form_body.css"
+          rel="stylesheet">
+    <link href="styles/main/__submit_news_block/__submit_news_form_block/__submit_news_form_body/__submit_news_form_element/news_submission_item.css"
+          rel="stylesheet">
+    <link href="styles/main/__submit_news_block/__submit_news_form_block/__submit_news_form_body/__submit_news_form_element/__news_submission_element_input/"
+          rel="stylesheet">
+    <link href="styles/main/__submit_news_block/__submit_news_form_block/__submit_news_form_body/__submit_news_form_element/__news_submission_element_label/"
+          rel="stylesheet">
+    <link href="styles/main/__submit_news_block/__submit_news_form_block/__submit_news_form_header/submit_news_form_header.css"
+          rel="stylesheet">
+
+    <link href="styles/main/__submit_news_block/__submit_news_form_block/__submit_news_form_body/__submit_news_form_element/__news_submission_element_input/news_submission_element_input.css"
+          rel="stylesheet">
+
+    <link href="styles/main/__submit_news_block/__submit_news_form_block/__submit_news_form_body/__submit_news_form_element/__news_submission_element_label/news_submission_element_label.css"
+          rel="stylesheet">
 
     <link href="./styles/footer/footer.css" rel="stylesheet">
     <link href="./styles/footer/__quotes/footer__quotes.css" rel="stylesheet">
@@ -44,6 +74,7 @@
 
     <script src="scripts/loadtime.js"></script>
     <script src="scripts/setActiveNav.js"></script>
+
 
 </head>
 
@@ -65,6 +96,23 @@
 
 
 <main class="main">
+    <div class="submit_news_block">
+        <div class="submit_news_button_block">
+            <button class="submit_news_button" id="submit_news" name="submit_news"> Submit news</button>
+        </div>
+    </div>
+
+    <template id = "news_feed_element">
+        <li class="scroll_feed__element news_feed__element">
+            <a class="scroll_feed__element news_feed__element">
+                <img class="news_feed__picture">
+                <div class="news_feed_text_block">
+                    <h3 class="news_feed__title"></h3>
+                    <div class="news_feed__description"></div>
+                </div>
+            </a>
+        </li>
+    </template>
     <ul class="scroll_feed_block news_feed__block">
         <li class="scroll_feed__element news_feed__element">
             <a class="scroll_feed__element news_feed__element" href="https://www.callofduty.com/modernwarfare3">
@@ -75,13 +123,15 @@
                     </h3>
 
                     <div class="news_feed__description">
-                        The latest entry in Activision Blizzard's popular Call of Duty video-game series was made in half the time of previous iterations, a fact that may be contributing to a spate of bad reviews about the game’s storyline, according to people familiar with the development process.
+                        The latest entry in Activision Blizzard's popular Call of Duty video-game series was made in
+                        half the time of previous iterations, a fact that may be contributing to a spate of bad reviews
+                        about the game’s storyline, according to people familiar with the development process.
                     </div>
                 </div>
             </a>
         </li>
 
-        <li class="scroll_feed__element news_feed__element" href="google.com">
+        <li class="scroll_feed__element news_feed__element">
             <a class="scroll_feed__element news_feed__element" href="https://www.callofduty.com/modernwarfare3">
                 <img class="news_feed__picture" src="imgs/destinycrucible.png">
                 <div class="news_feed_text_block">
@@ -90,27 +140,59 @@
                     </h3>
 
                     <div class="news_feed__description">
-                        Bungie announces major updates to Destiny 2's Crucible with the upcoming Season 23 bringing new playlists, rotating modes, and more.
+                        Bungie announces major updates to Destiny 2's Crucible with the upcoming Season 23 bringing new
+                        playlists, rotating modes, and more.
                     </div>
                 </div>
             </a>
         </li>
 
 
-        <li class="scroll_feed__element news_feed__element" href="google.com">
-            <img class="news_feed__picture" src="imgs/rockstar.png">
-            </img>
-            <div class="news_feed_text_block">
-                <h3 class="news_feed__title">
-                    A Message from Rockstar Games
-                </h3>
+        <li class="scroll_feed__element news_feed__element">
+            <a class="scroll_feed__element news_feed__element" href="https://www.callofduty.com/modernwarfare3">
+                <img class="news_feed__picture" src="imgs/rockstar.png">
+                <div class="news_feed_text_block">
+                    <h3 class="news_feed__title">
+                        A Message from Rockstar Games
+                    </h3>
 
-                <div class="news_feed__description">
-                    <q>"We are very excited to let you know that in early December, we will release the first trailer for the next Grand Theft Auto."</q>
+                    <div class="news_feed__description">
+                        <q>"We are very excited to let you know that in early December, we will release the first
+                            trailer for the next Grand Theft Auto."</q>
+                    </div>
                 </div>
-            </div>
+            </a>
         </li>
     </ul>
+
+    <div id = "blur_block" class="background_blur_block">
+        <div id = "submit_news_form_block" class="submit_news_form_block">
+            <div class="submit_news_form_header">
+                News submission form:
+            </div>
+            <form id = "news_form_submit" autocomplete="off" class="submit_news_form_body">
+                <div class = "news_submission_item">
+                    <label class = "news_submission_element_label" for = "title">Title: </label>
+                    <input class = "news_submission_element_input" type = "text" name = "news_title" required value="" id = "title">
+                </div>
+                <div class = "news_submission_item">
+                    <label class = "news_submission_element_label" for = "description">Description: </label>
+                    <input class = "news_submission_element_input" type = "text" name = "news_description" required value="" id = "description">
+                </div>
+                <div class = "news_submission_item">
+                    <label class = "news_submission_element_label" for = "link">Link: </label>
+                    <input class = "news_submission_element_input" type = "url" name = "news_link" required value="" id = "link">
+                </div>
+                <div class = "news_submission_item">
+                    <label class = "news_submission_element_label" for = "image">Image: </label>
+                    <input class = "news_submission_element_input" type = "text" name = "image" required id = "image">
+                </div>
+                <div id ="add_news_button" class = "news_submission_item">
+                    <button class = "news_submission_element_input" type = "button" id = "submit"> Submit </button>
+                </div>
+            </form>
+        </div>
+    </div>
 </main>
 
 <footer class="footer">
@@ -132,6 +214,8 @@
         </p>
     </div>
 </footer>
+
+<script src="scripts/addNews.js"></script>
 </body>
 
 </html>

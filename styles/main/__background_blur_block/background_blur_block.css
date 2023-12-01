@@ -1,0 +1,19 @@
+.background_blur_block
+{
+    backdrop-filter: blur(2px);
+    background-color: rgba(200, 200, 200, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: none;
+}
+
+.background_blur_block_visible{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,10 @@
+.submit_news_form_body{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-top: darkgray 1px solid;
+    overflow: hidden;
+
+    z-index: inherit;
+}
