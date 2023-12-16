@@ -8,7 +8,7 @@
           content="Track your performance in a multitude of games. Analyze your style. Improve your performance.">
     <meta name="keywords" content="Warzone, Apex Legends, CS, Fortnite">
 
-   <!-- <link href="styles/outline-prototype-label.css" rel="stylesheet"> -->
+    <!-- <link href="styles/outline-prototype-label.css" rel="stylesheet"> -->
     <link href="./styles/body.css" rel="stylesheet">
     <link href="./styles/main/main.css" rel="stylesheet">
     <link href="./styles/html.css" rel="stylesheet">
@@ -21,8 +21,6 @@
     <link href="./styles/header/__logo_box/__text/logo_box__text.css" rel="stylesheet">
     <link href="./styles/header/__navigation/navigation.css" rel="stylesheet">
     <link href="./styles/header/__navigation/__list/navigation__list.css" rel="stylesheet">
-
-
 
 
     <link href="./styles/main/__game_search_block/game_search_block.css" rel="stylesheet">
@@ -62,10 +60,9 @@
     <link href="./styles/footer/__quotes/quote_block.css" rel="stylesheet">
 
 
-
     <script src="scripts/loadtime.js"></script>
     <script src="scripts/setActiveNav.js"></script>
-
+    <script src="scripts/loadGameCards.js"></script>
 
 </head>
 
@@ -132,7 +129,17 @@
             </div>
             <img class="amogus__makarevich_image" src="imgs/amogus_roma.png" alt="Roma said the amogus word!">
         </div>
-        <ul class="game_cards_selection">
+
+        <template id="game_card_template">
+            <div class="game_card__background">
+                <li class="game_card">
+                    <a class="game_card__link"> <img class="game_card__image" src=""> </a>
+                    <span class="game_card__text"> </span>
+                </li>
+            </div>
+        </template>
+
+        <ul class="game_cards_selection game_cards_selection_hidden" id="game_cards">
             <div class="game_card__background">
                 <li class="game_card">
                     <a href="https://google.com" class="game_card__link"><img class="game_card__image"
@@ -182,7 +189,8 @@
                 </li>
             </div>
         </ul>
-    </div>
+        <ul class = "game_card_pagination">
+    </ul>
 </main>
 
 <footer class="footer">
@@ -205,5 +213,4 @@
     </div>
 </footer>
 </body>
-
 </html>
